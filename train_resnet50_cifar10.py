@@ -62,7 +62,7 @@ if os.path.isfile(previouslytrainedModelpath):
     custom_resnet_model=model
 else :
     print('Initializing resnet50 model1')
-    model = ResNet50(input_tensor=image_input, include_top=True,weights='None')
+    model = ResNet50(input_tensor=image_input, include_top=True,weights=None)
     model.summary()
 #    sys.exit(1)
     
